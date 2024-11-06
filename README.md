@@ -25,7 +25,7 @@ Other OS's are not supported (yet?).
 Automated usage:
 
 ```
-./sample_flamegraph.sh <pid> <sampling duration seconds>
+./sample_flamegraph_mac.sh <pid> <sampling duration seconds>
 ```
 
 This will produce a flamegraph for process <pid> sampled over the indicated duration. The flamegraph location will be printed afterward.
