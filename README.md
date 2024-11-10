@@ -34,7 +34,7 @@ On mac, the simplest way to open these is with `open <path to .svg>`.
 
 Manual example that the script automates:
 ```
-sample <pid> -f output.prof <duration seconds> <sample interval in millis> 
+sample <pid> -f output.prof <duration seconds> <sample interval in seconds> 
 filtercalltree output.prof  > filtered.prof
 ./stackcollapse-sample.awk filtered.prof > out.folded
 ./FlameGraph/flamegraph.pl out.folded > flamegraph.svg
