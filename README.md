@@ -103,8 +103,8 @@ filtercalltree output.prof  > filtered.prof
 
 ### Using `perf`
 
-(modern)
+(User space profiling)
 
-### Using `dtrace`
+### Using `eBPF`
 
-(old)
+(Kernel space profiling)
