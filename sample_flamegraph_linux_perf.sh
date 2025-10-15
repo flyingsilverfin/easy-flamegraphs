@@ -12,7 +12,7 @@ data_dir=$SCRIPT_DIR/results_linux_perf/$timestamp
 
 mkdir -p $data_dir
 
-perf record -F $sampling_rate -p $pid -g -a -e sched:sched_switch -e sched:sched_stat_sleep -- sleep $duration
+perf record -F $sampling_rate -p $pid -g -a -- sleep $duration
 perf script > $data_dir/samples.perf
 
 $SCRIPT_DIR/FlameGraph/stackcollapse-perf.pl $data_dir/samples.perf > $data_dir/samples.folded
