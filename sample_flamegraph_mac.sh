@@ -4,7 +4,7 @@ timestamp=$(date +%s)
 interval_ms=1
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-data_dir=$SCRIPT_DIR/results/$timestamp
+data_dir=$SCRIPT_DIR/results_mac/$timestamp
 
 mkdir -p $data_dir
 
