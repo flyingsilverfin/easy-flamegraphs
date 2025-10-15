@@ -10,7 +10,7 @@ mkdir -p $data_dir
 
 sample $pid -f $data_dir/samples.prof $duration $interval_ms 
 filtercalltree $data_dir/samples.prof > $data_dir/samples_filtered.prof
-$SCRIPT_DIR/stackcollapse-sample.awk $data_dir/samples_filtered.prof > $data_dir/calls.folded
+$SCRIPT_DIR/FlameGraph/stackcollapse-sample.awk $data_dir/samples_filtered.prof > $data_dir/calls.folded
 $SCRIPT_DIR/FlameGraph/flamegraph.pl $data_dir/calls.folded > $data_dir/flamegraph.svg
 
 echo Result: $data_dir/flamegraph.svg
